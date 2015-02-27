@@ -1,24 +1,18 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'flux/rails/version'
+$:.push File.expand_path("../lib", __FILE__)
 
-Gem::Specification.new do |spec|
-  spec.name          = "flux-rails-assets"
-  spec.version       = Flux::Rails::VERSION
-  spec.authors       = ["Stefan Ritter"]
-  spec.email         = ["stefan@stefanritter.com"]
-  spec.summary       = %q{Flux dispatcher and Node Event Emitter for the Ruby on Rails asset pipeline}
-  spec.description   = %q{Use Facebook's Flux dispatcher and Node EventEmitter in your Rails project.}
-  spec.homepage      = "https://github.com/stefanritter/flux-rails-assets"
-  spec.license       = "MIT"
+Gem::Specification.new do |s|
+  s.name        = "flux-rails-assets"
+  s.version     = "1.0.0"
+  s.authors       = ["Stefan Ritter"]
+  s.email         = ["stefan@stefanritter.com"]
+  s.summary       = %q{Flux dispatcher and Node Event Emitter for the Ruby on Rails asset pipeline}
+  s.description   = %q{Use Facebook's Flux dispatcher and Node EventEmitter in your Rails project.}
+  s.homepage      = "https://github.com/stefanritter/flux-rails-assets"
+  s.license       = "MIT"
 
-  spec.files = Dir["{lib,vendor}/**/*"] + ["LICENSE.txt", "README.md"]
-  spec.require_paths = ["lib"]
+  s.files = Dir["{lib,vendor}/**/*"] + ["LICENSE.txt", "README.md"]
 
-  spec.add_development_dependency "bundler", "~> 1.7"
-  spec.add_development_dependency "rake", "~> 10.0"
-
-  spec.add_dependency 'rails', '>= 3.1'
-  spec.add_dependency 'railties', '>= 3.1'  
+  s.add_dependency "railties", ">= 3.1"
+  s.add_development_dependency "rails", "~> 3.2.12"
 end
