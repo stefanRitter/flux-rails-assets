@@ -45,10 +45,10 @@ This will create two globals you can use to create your application's dispatcher
   ExampleStore.dispatchToken = AppDispatcher.register(function (payload) {
     var action = payload.action;
 
-    switch(action.type) {
+    switch(action.actionType) {
       
       case 'EXAMPLE_ACTION':
-        ExampleStore.emitChange();
+        ExampleStore.emit('change');
         break;
 
       default:
