@@ -2,6 +2,10 @@
 
 [Flux](https://github.com/facebook/flux) and [Node EventEmitter](https://github.com/joyent/node) for Rails Asset Pipeline for use with [react-rails gem](https://github.com/reactjs/react-rails)
 
+Doesn't use CommonJS instead it creates FluxDispatcher and EventEmitter on window to easily work with [sprockets-rails](https://github.com/rails/sprockets-rails) Assets Pipeline.
+
+Works well with react-rails server side rendering.
+
 - Flux version: [2.0.2](https://github.com/facebook/flux/releases/tag/2.0.2)
 
 
@@ -31,7 +35,7 @@ Require flux and the eventemitter in your application.js:
   //= require eventemitter
   ```
 
-This will create two globals you can use to create your application's dispatcher ans stores:
+This will create two globals you can use to create your application's dispatcher and stores:
 
   ```js
   var AppDispatcher = new FluxDispatcher();

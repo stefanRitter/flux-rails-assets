@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'flux/rails/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "flux-rails"
+  spec.name          = "flux-rails-assets"
   spec.version       = Flux::Rails::VERSION
   spec.authors       = ["Stefan Ritter"]
   spec.email         = ["stefan@stefanritter.com"]
