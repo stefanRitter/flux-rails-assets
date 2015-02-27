@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/stefanritter/flux-rails-assets"
   spec.license       = "MIT"
 
-  spec.files = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE", "README.md"]
+  spec.files = Dir["{lib,vendor}/**/*"] + ["LICENSE.txt", "README.md"]
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.7"
