@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "flux-rails-assets"
-  s.version     = "1.0.1"
+  s.version     = "2.1.0"
   s.authors       = ["Stefan Ritter"]
   s.email         = ["stefan@stefanritter.com"]
   s.summary       = %q{Flux dispatcher and Node Event Emitter for the Ruby on Rails asset pipeline}
