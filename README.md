@@ -6,7 +6,7 @@ Doesn't use CommonJS instead it creates FluxDispatcher and EventEmitter on windo
 
 Works well with react-rails server side rendering.
 
-- Flux version: [2.0.2](https://github.com/facebook/flux/releases/tag/2.0.2)
+- Flux version: [2.1.0](https://github.com/facebook/flux/releases/tag/2.1.0)
 
 
 ## Installation
@@ -46,7 +46,7 @@ This will create two globals you can use to create your application's dispatcher
     var action = payload.action;
 
     switch(action.actionType) {
-      
+
       case 'EXAMPLE_ACTION':
         ExampleStore.emit('change');
         break;
