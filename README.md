@@ -38,7 +38,7 @@ Require flux and the eventemitter in your application.js:
 This will create two globals you can use to create your application's dispatcher and stores:
 
   ```js
-  var AppDispatcher = new FluxDispatcher();
+  var AppDispatcher = new Flux.Dispatcher();
 
   var ExampleStore = new EventEmitter();
 
